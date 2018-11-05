@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+#import "FirstViewController.h"
+#import "MobileNetV2.h"
 
+@interface SecondViewController : FirstViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fpsLabel;
 
 @end
-

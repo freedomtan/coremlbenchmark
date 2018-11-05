@@ -8,15 +8,25 @@
 
 #import "SecondViewController.h"
 
-@interface SecondViewController ()
-
+@interface SecondViewController () {
+    MobileNetV2 *model;
+}
 @end
 
 @implementation SecondViewController
+@dynamic tableView;
+@dynamic resultLabel;
+@dynamic fpsLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MLModelConfiguration *mc = [[MLModelConfiguration alloc] init];
+    // mc.computeUnits = MLComputeUnitsCPUOnly;
+    // mc.computeUnits = MLComputeUnitsCPUAndGPU;
+    // mc.computeUnits = MLComputeUnitsAll;
+    model = [[MobileNetV2 alloc] initWithConfiguration: mc error: nil];
 }
 
 

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "UIImage+UIImage_resize_crop.h"
+
 @interface AppDelegate ()
 
 @end

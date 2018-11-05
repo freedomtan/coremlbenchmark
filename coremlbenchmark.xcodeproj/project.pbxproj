@@ -16,6 +16,9 @@
 		1A3F2ADD218FCF1C000C5173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F2ADC218FCF1C000C5173 /* main.m */; };
 		1A3F2AE7218FCF1D000C5173 /* coremlbenchmarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F2AE6218FCF1D000C5173 /* coremlbenchmarkTests.m */; };
 		1A3F2AF2218FCF1D000C5173 /* coremlbenchmarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F2AF1218FCF1D000C5173 /* coremlbenchmarkUITests.m */; };
+		1A3F2B01218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F2B00218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m */; };
+		1A3F2B032190229A000C5173 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A3F2B022190229A000C5173 /* MobileNet.mlmodel */; };
+		1ADB4A532190755300F4C1A9 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		1A3F2AED218FCF1D000C5173 /* coremlbenchmarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coremlbenchmarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3F2AF1218FCF1D000C5173 /* coremlbenchmarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coremlbenchmarkUITests.m; sourceTree = "<group>"; };
 		1A3F2AF3218FCF1D000C5173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A3F2AFF218FE7D1000C5173 /* UIImage+UIImage_resize_crop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImage_resize_crop.h"; sourceTree = "<group>"; };
+		1A3F2B00218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImage_resize_crop.m"; sourceTree = "<group>"; };
+		1A3F2B022190229A000C5173 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +117,14 @@
 				1A3F2ACE218FCF00000C5173 /* FirstViewController.m */,
 				1A3F2AD0218FCF00000C5173 /* SecondViewController.h */,
 				1A3F2AD1218FCF00000C5173 /* SecondViewController.m */,
+				1A3F2AFF218FE7D1000C5173 /* UIImage+UIImage_resize_crop.h */,
+				1A3F2B00218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m */,
 				1A3F2AD3218FCF01000C5173 /* Main.storyboard */,
 				1A3F2AD6218FCF1C000C5173 /* Assets.xcassets */,
 				1A3F2AD8218FCF1C000C5173 /* LaunchScreen.storyboard */,
 				1A3F2ADB218FCF1C000C5173 /* Info.plist */,
+				1A3F2B022190229A000C5173 /* MobileNet.mlmodel */,
+				1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */,
 				1A3F2ADC218FCF1C000C5173 /* main.m */,
 			);
 			path = coremlbenchmark;
@@ -267,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADB4A532190755300F4C1A9 /* MobileNetV2.mlmodel in Sources */,
 				1A3F2AD2218FCF00000C5173 /* SecondViewController.m in Sources */,
+				1A3F2B01218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m in Sources */,
+				1A3F2B032190229A000C5173 /* MobileNet.mlmodel in Sources */,
 				1A3F2ACC218FCEFF000C5173 /* AppDelegate.m in Sources */,
 				1A3F2ADD218FCF1C000C5173 /* main.m in Sources */,
 				1A3F2ACF218FCF00000C5173 /* FirstViewController.m in Sources */,

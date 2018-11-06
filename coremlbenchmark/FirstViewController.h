@@ -19,6 +19,8 @@
     AVCaptureDeviceInput *deviceInput;
     AVCaptureVideoPreviewLayer *previewLayer;
     
+    MLModelConfiguration *mc;
+    
     NSTimeInterval runningAverage;
     NSTimeInterval minimumTime;
     

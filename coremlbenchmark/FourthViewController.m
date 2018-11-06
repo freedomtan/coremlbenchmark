@@ -22,10 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MLModelConfiguration *mc = [[MLModelConfiguration alloc] init];
-    // mc.computeUnits = MLComputeUnitsCPUOnly;
-    // mc.computeUnits = MLComputeUnitsCPUAndGPU;
-    // mc.computeUnits = MLComputeUnitsAll;
     model = [[ResNet50 alloc] initWithConfiguration: mc error: nil];
 }
 

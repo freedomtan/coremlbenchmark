@@ -22,6 +22,10 @@
 		1AD51F5721913A9E00A43096 /* ResNet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F5621913A9E00A43096 /* ResNet50.mlmodel */; };
 		1AD51F5921913AFC00A43096 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F5821913AFC00A43096 /* FourthViewController.m */; };
 		1AD51F602191417B00A43096 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F5F2191417B00A43096 /* Inceptionv3.mlmodel */; };
+		1AD51F6521915A6600A43096 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F6421915A6600A43096 /* FifthViewController.m */; };
+		1AD51F6721915ABF00A43096 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F6621915ABE00A43096 /* SixthViewController.m */; };
+		1AD51F6A21915B1500A43096 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F6921915B1500A43096 /* SqueezeNet.mlmodel */; };
+		1AD51F6C21915BA500A43096 /* MobileNet_025_128.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51F6B21915BA400A43096 /* MobileNet_025_128.mlmodel */; };
 		1ADB4A532190755300F4C1A9 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,12 @@
 		1AD51F5821913AFC00A43096 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		1AD51F5A21913B1000A43096 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		1AD51F5F2191417B00A43096 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		1AD51F6321915A4600A43096 /* FifthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		1AD51F6421915A6600A43096 /* FifthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		1AD51F6621915ABE00A43096 /* SixthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
+		1AD51F6821915AD200A43096 /* SixthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		1AD51F6921915B1500A43096 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		1AD51F6B21915BA400A43096 /* MobileNet_025_128.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet_025_128.mlmodel; sourceTree = "<group>"; };
 		1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +141,10 @@
 				1AD51F522191330A00A43096 /* ThirdViewController.m */,
 				1AD51F5A21913B1000A43096 /* FourthViewController.h */,
 				1AD51F5821913AFC00A43096 /* FourthViewController.m */,
+				1AD51F6321915A4600A43096 /* FifthViewController.h */,
+				1AD51F6421915A6600A43096 /* FifthViewController.m */,
+				1AD51F6821915AD200A43096 /* SixthViewController.h */,
+				1AD51F6621915ABE00A43096 /* SixthViewController.m */,
 				1A3F2AFF218FE7D1000C5173 /* UIImage+UIImage_resize_crop.h */,
 				1A3F2B00218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m */,
 				1A3F2AD3218FCF01000C5173 /* Main.storyboard */,
@@ -139,8 +153,10 @@
 				1A3F2ADB218FCF1C000C5173 /* Info.plist */,
 				1AD51F5F2191417B00A43096 /* Inceptionv3.mlmodel */,
 				1A3F2B022190229A000C5173 /* MobileNet.mlmodel */,
+				1AD51F6B21915BA400A43096 /* MobileNet_025_128.mlmodel */,
 				1ADB4A522190755300F4C1A9 /* MobileNetV2.mlmodel */,
 				1AD51F5621913A9E00A43096 /* ResNet50.mlmodel */,
+				1AD51F6921915B1500A43096 /* SqueezeNet.mlmodel */,
 				1A3F2ADC218FCF1C000C5173 /* main.m */,
 			);
 			path = coremlbenchmark;
@@ -294,14 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD51F6521915A6600A43096 /* FifthViewController.m in Sources */,
 				1AD51F602191417B00A43096 /* Inceptionv3.mlmodel in Sources */,
 				1AD51F5721913A9E00A43096 /* ResNet50.mlmodel in Sources */,
+				1AD51F6A21915B1500A43096 /* SqueezeNet.mlmodel in Sources */,
 				1ADB4A532190755300F4C1A9 /* MobileNetV2.mlmodel in Sources */,
 				1A3F2AD2218FCF00000C5173 /* SecondViewController.m in Sources */,
 				1AD51F532191330A00A43096 /* ThirdViewController.m in Sources */,
+				1AD51F6C21915BA500A43096 /* MobileNet_025_128.mlmodel in Sources */,
 				1AD51F5921913AFC00A43096 /* FourthViewController.m in Sources */,
 				1A3F2B01218FE7D1000C5173 /* UIImage+UIImage_resize_crop.m in Sources */,
 				1A3F2B032190229A000C5173 /* MobileNet.mlmodel in Sources */,
+				1AD51F6721915ABF00A43096 /* SixthViewController.m in Sources */,
 				1A3F2ACC218FCEFF000C5173 /* AppDelegate.m in Sources */,
 				1A3F2ADD218FCF1C000C5173 /* main.m in Sources */,
 				1A3F2ACF218FCF00000C5173 /* FirstViewController.m in Sources */,

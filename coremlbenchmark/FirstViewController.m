@@ -73,8 +73,7 @@
                 return (NSComparisonResult)NSOrderedAscending;
         }];
         self->numberOfResults = 5;
-        [self->_tableView reloadData];
-        // self->sortedArray
+        [self.tableView reloadData];
     });
 }
 

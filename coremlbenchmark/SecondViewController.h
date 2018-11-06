@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "FirstViewController.h"
+#import "UIImage+UIImage_resize_crop.h"
 #import "MobileNetV2.h"
 
 @interface SecondViewController : FirstViewController

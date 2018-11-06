@@ -47,12 +47,21 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSTimeInterval start, stop;
         MobileNetOutput *o;
+        int count = 10;
+        int i;
+        
+        NSMutableArray *inputs = [[NSMutableArray alloc] init];
         
         float minLen = (uiImage.size.width > uiImage.size.height) ? uiImage.size.height : uiImage.size.width;
         UIImage *croppedSquareImage = [[uiImage resizeTo: CGSizeMake(inputImageSize * uiImage.size.width / minLen, inputImageSize * uiImage.size.height / minLen)] cropToSquare];
+        for (i = 0; i < count; i++) {
+            [inputs addObject: [[MobileNetInput alloc] initWithImage: [croppedSquareImage pixelBuffer]]];
+        }
+        MLPredictionOptions *opt = [[MLPredictionOptions alloc] init];
         
         start = [[NSDate date] timeIntervalSince1970];
-        o = [self->model predictionFromImage: [croppedSquareImage pixelBuffer] error:nil];
+        o = [self->model predictionsFromInputs: inputs options: opt error: nil][0];
+        // o = [self->model predictionFromImage: [croppedSquareImage pixelBuffer] error:nil];
         stop = [[NSDate date] timeIntervalSince1970];
         self.resultLabel.text = o.classLabel;
         
@@ -66,7 +75,7 @@
         }
         
         // min, instantaneous, running average
-        self.fpsLabel.text = [NSString stringWithFormat: @"%2.2f ms, %2.2f ms, %2.2f ms", self->minimumTime * 1000, ((stop - start) * 1000), self->runningAverage * 1000];
+        self.fpsLabel.text = [NSString stringWithFormat: @"%2.2f ms, %2.2f ms, %2.2f ms", self->minimumTime * 1000/count, ((stop - start) * 1000)/count, self->runningAverage * 1000 / count];
         self->sortedArray = [o.classLabelProbs keysSortedByValueUsingComparator: ^NSComparisonResult(id obj1, id obj2) {
             if ([obj2 floatValue] > [obj1 floatValue])
                 return (NSComparisonResult)NSOrderedDescending;

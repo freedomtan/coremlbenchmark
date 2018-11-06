@@ -52,19 +52,12 @@
     CGFloat width = self.size.width;
     CGFloat height = self.size.height;
     
-    CFStringRef keys[2];
-    CFBooleanRef vals[2];
-    
-    keys[0] = kCVPixelBufferCGImageCompatibilityKey;
-    keys[1] = kCVPixelBufferCGBitmapContextCompatibilityKey;
-    
-    vals[0] = kCFBooleanTrue;
-    vals[1] = kCFBooleanTrue;
+    CFStringRef keys[2] = {kCVPixelBufferCGImageCompatibilityKey,kCVPixelBufferCGBitmapContextCompatibilityKey};
+    CFBooleanRef vals[2] = {kCFBooleanTrue, kCFBooleanTrue};
     
     CFDictionaryRef attrs = CFDictionaryCreate(NULL, (const void **) keys, (const void **) vals, 2, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
     
     CVPixelBufferRef pixelBuffer;
-    
     CVPixelBufferCreate(kCFAllocatorDefault, width, height, kCVPixelFormatType_32ARGB, attrs, &pixelBuffer);
 
     CVPixelBufferLockBaseAddress(pixelBuffer, kCVPixelBufferLock_ReadOnly);

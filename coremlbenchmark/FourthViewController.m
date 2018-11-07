@@ -34,10 +34,10 @@
         ResNet50Output *o;
         
         float minLen = (uiImage.size.width > uiImage.size.height) ? uiImage.size.height : uiImage.size.width;
-        UIImage *croppedSquareImage = [[uiImage resizeTo: CGSizeMake(inputImageSize * uiImage.size.width / minLen, inputImageSize * uiImage.size.height / minLen)] cropToSquare];
+        CVPixelBufferRef pixelBuffer = [[[uiImage resizeTo: CGSizeMake(inputImageSize * uiImage.size.width / minLen, inputImageSize * uiImage.size.height / minLen)] cropToSquare] pixelBuffer];
         
         start = [[NSDate date] timeIntervalSince1970];
-        o = [self->model predictionFromImage: [croppedSquareImage pixelBuffer] error: nil];
+        o = [self->model predictionFromImage: pixelBuffer error: nil];
         stop = [[NSDate date] timeIntervalSince1970];
         self.resultLabel.text = o.classLabel;
         

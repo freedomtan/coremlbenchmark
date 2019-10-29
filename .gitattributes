@@ -1,0 +1,9 @@
+*.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/Inceptionv3.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/MobileNet.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/MobileNetV2.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/MobileNetV3.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/MobileNet_025_128.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/ResNet50.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/SqueezeNet.mlmodel filter=lfs diff=lfs merge=lfs -text
+coremlbenchmark/VGG16.mlmodel filter=lfs diff=lfs merge=lfs -text

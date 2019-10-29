@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/freedom/work/coremlbenchmark/coremlbenchmark/Inceptionv3.mlmodel">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
